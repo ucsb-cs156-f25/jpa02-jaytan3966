@@ -16,6 +16,7 @@ public class Developer {
      */
 
     public static String getName() {
+
         return "Jayden";
     }
 
@@ -25,8 +26,8 @@ public class Developer {
      */
 
     public static String getGithubId() {
-        // TODO: Change this to your github id
-        return "cgaucho";
+
+        return "jaytan3966";
     }
 
     /**
