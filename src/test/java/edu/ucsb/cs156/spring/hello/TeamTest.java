@@ -74,4 +74,45 @@ public class TeamTest {
         other.setMembers(otherMembers);
         assertFalse(team.equals(other));
     }
+
+    @Test
+    public void hashCode_sameName_and_sameMembers_returns_true(){
+        Team other = new Team("test-team");
+        assertTrue(team.hashCode() == other.hashCode());
+    }
+
+    @Test
+    public void hashCode_sameName_and_diffMembers_returns_false(){
+        ArrayList<String> otherMembers = new ArrayList<>();
+        otherMembers.add("Bobby");
+        Team other = new Team("test-team");
+        other.setMembers(otherMembers);
+
+        assertFalse(team.hashCode() == other.hashCode());
+    }
+
+    @Test
+    public void hashCode_diffName_and_sameMembers_returns_false(){
+        Team other = new Team("test-team1");
+        
+        assertFalse(team.hashCode() == other.hashCode());
+    }
+
+    @Test
+    public void hashCode_diffName_and_diffMembers_returns_false(){
+        ArrayList<String> otherMembers = new ArrayList<>();
+        otherMembers.add("Bobby");
+        Team other = new Team("test-team1");
+        other.setMembers(otherMembers);
+
+        assertFalse(team.hashCode() == other.hashCode());
+    }
+
+    @Test
+    public void hashCode_expectedValue_returns_true(){
+        Team t = new Team("test-team");
+        int result = t.hashCode();
+        int expectedResult = -1226298695;
+        assertEquals(expectedResult, result);
+    }
 }
