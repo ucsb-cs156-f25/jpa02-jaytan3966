@@ -38,12 +38,12 @@ public class Developer {
     public static Team getTeam() {
         // TODO: Change this to your team name
         Team team = new Team("f25-12");
-        team.addMember("Alvin");
-        team.addMember("Ben");
-        team.addMember("Jayden");
-        team.addMember("Joshua");
-        team.addMember("Hauke");
-        team.addMember("Tej");
+        team.addMember("JOSHUA CHACKO");
+        team.addMember("ALVIN KEN");
+        team.addMember("HAUKE SEBASTIAN");
+        team.addMember("JAYDEN JUN KHAI");
+        team.addMember("BEN");
+        team.addMember("TEJ SRI");
         return team;
     }
 }
