@@ -22,7 +22,7 @@ public class DeveloperTest {
 
     @Test
     public void getName_returns_correct_name() {
-        assertEquals("Jayden", Developer.getName());
+        assertEquals("JAYDEN JUN KHAI", Developer.getName());
     }
 
     // TODO: Add additional tests as needed to get to 100% jacoco line coverage, and
