@@ -2,7 +2,7 @@
 
 Repo: https://github.com/ucsb-cs156-f25/jpa02-jaytan3966
 
-Deployed at: https://jpa02-jaytan3966.dokku-12.cs.ucsb.edu/info
+Deployed at: https://jpa02-jaytan3966.dokku-12.cs.ucsb.edu
 
 
 # About this repo
